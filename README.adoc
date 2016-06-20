@@ -1,0 +1,10 @@
+API calls to check if the cache is fine. if cache.infinispan.enabled=true then the below operations will test inifinispan.
+
+If the prop is set to false the same operations would test Terracotta
+
+
+http://localhost:8080/ehcache-web/rest/cacheSize
+
+http://localhost:8080/ehcache-web/rest/loadCache
+
+http://localhost:8080/ehcache-web/rest/checkCache

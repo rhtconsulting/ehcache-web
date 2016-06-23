@@ -61,4 +61,16 @@ public class Client {
 
 
     }
+    @GET
+    @Path("/test")
+    @Produces({ "text/plain" })
+    public String getResult() {
+        return "Great Success!!!\n";
+    }
+    @GET
+    @Path("/errorOut")
+    @Produces({ "text/plain" })
+    public void errorOut() {
+        throw new gov.hhs.cms.base.exception.InternalErrorException("An Error that is really really bad");
+    }
 }
